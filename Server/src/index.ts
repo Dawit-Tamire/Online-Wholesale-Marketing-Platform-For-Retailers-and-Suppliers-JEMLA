@@ -16,7 +16,7 @@ app.use(
   })
 );
 
-AppDataSource.initialize()
+mongoose.connect("mongodb+srv://davtame3:<db_password>@cluster0.okjc7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(async () => {
     console.log('Database started Successfully!');
   })
